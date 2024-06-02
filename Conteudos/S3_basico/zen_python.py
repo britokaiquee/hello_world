@@ -1,6 +1,3 @@
-# Apenas essa parte do Zen (sem os significados) e o arquivo sobre ambiente
-# virtual que foi do curso da Udemy.
-
 '''
 The Zen of Python, por Tim Peters
 
