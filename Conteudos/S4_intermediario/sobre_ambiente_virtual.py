@@ -34,7 +34,17 @@
 # pip freeze
 
 
+# para atualizar pip:
+# python.exe -m pip install --upgrade pip
+
+
 # Criando e usando um requirements.txt
 # pip freeze > requirements.txt
 # Instalando tudo do requirements.txt
 # pip install -r requirements.txt
+
+
+# para desinstalar tudo:
+# pip freeze > requirements.txt
+# Get-Content requirements.txt | ForEach-Object { pip uninstall -y $_ }
+# Remove-Item requirements.txt  # se quiser
