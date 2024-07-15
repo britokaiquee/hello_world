@@ -10,41 +10,56 @@
 # venv env .venv .env
 
 
-# Como criar ambientes virtuais
+############ Criando ambientes virtuais ############
+
 # Abra a pasta do seu projeto no terminal
 # e digite:
 # python -m venv venv
 
 
-# Ativando e desativando meu ambiente virtual
-# Windows: .\venv\Scripts\activate
-# Linux e Mac: source venv/bin/activate
+#### Ativando e desativando um ambiente virtual ####
+
+# Windows:
+# .\venv\Scripts\activate
+
+# Linux e Mac:
+# source venv/bin/activate
+
 # Desativar: deactivate
 
 
-# pip - instalando pacotes e bibliotecas
+##### Instalando pacotes e bibliotecas com pip #####
+
 # Instalar última versão:
 # pip install nome_pacote
-# Instalar versão precisa
+
+# Instalar versão precisa:
 # (tem outras formas também não mencionadas)
 # pip install nome_pacote==0.0.0
-# Desinstalar pacote
+
+# Desinstalar pacote:
 # pip uninstall nome_pacote
-# Congelar (ver pacotes)
+
+# Congelar (ver pacotes):
 # pip freeze
 
-
-# para atualizar pip:
+# Atualizar pip:
 # python.exe -m pip install --upgrade pip
 
 
-# Criando e usando um requirements.txt
+####### Criando e usando um requirements.txt #######
+
+# Para criar:
 # pip freeze > requirements.txt
-# Instalando tudo do requirements.txt
+
+# Para instalar tudo dele:
 # pip install -r requirements.txt
 
 
-# para desinstalar tudo:
-# pip freeze > requirements.txt
-# Get-Content requirements.txt | ForEach-Object { pip uninstall -y $_ }
-# Remove-Item requirements.txt  # se quiser
+###### Desinstalando todos pacotes de uma vez: #####
+
+'''
+pip freeze > requirements.txt
+Get-Content requirements.txt | ForEach-Object { pip uninstall -y $_ }
+Remove-Item requirements.txt  # OPCIONAL (pode copiar e colar com o comentário)
+'''
