@@ -61,5 +61,5 @@
 '''
 pip freeze > requirements.txt
 Get-Content requirements.txt | ForEach-Object { pip uninstall -y $_ }
-Remove-Item requirements.txt  # OPCIONAL (pode copiar e colar com o comentário)
+Remove-Item requirements.txt  # OPCIONAL
 '''
