@@ -11,7 +11,7 @@ A palavra "global" faz uma variável do escopo externo ser a mesma no escopo
 interno, e é uma má prática utilizá-la.
 """
 
-x = 1
+x = 1  # namespace global
 
 
 def escopo():
